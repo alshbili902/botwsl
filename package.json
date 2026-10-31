@@ -1,0 +1,26 @@
+{
+  "name": "wasl-telegram-bot",
+  "version": "1.0.0",
+  "description": "WASL (وصل للخدمات الإلكترونية) Professional Arabic Telegram Announcement Generator Bot",
+  "main": "src/app.js",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "inspect-template": "node src/services/templateInspector.js",
+    "test": "node tests/runTests.js",
+    "setup:browser": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "@umalqura/core": "^0.0.7",
+    "dotenv": "^16.4.7",
+    "luxon": "^3.5.0",
+    "pino": "^9.6.0",
+    "playwright": "^1.50.0",
+    "sharp": "^0.35.5",
+    "telegraf": "^4.16.3"
+  }
+}
